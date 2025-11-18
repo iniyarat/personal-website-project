@@ -10,3 +10,36 @@ Dark Accent: #7E7C7F;
 Dark Shades: #2B3340;
 */
 
+body {
+    background-color:#F4EEDC;
+    font-family: monospace;
+    font-size:16px;
+    color: #2B3340;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    color:#475671;
+    font-family: monospace;
+    font-size: 32px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:#C7CED6;
+    padding: 20px;
+}
+
+.profile-pic {
+    display: inline-block;
+    border-radius: 50%;
+    width: 120px;
+}
+
+.nav {
+    width: 200px;
+    background-color:#C7CED6:
+}
