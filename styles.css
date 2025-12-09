@@ -118,3 +118,101 @@ footer a {
 footer a:hover {
     color: #F4EEDC;
 }
+
+/* CONTACT FORM STYLING */
+.contact-section {
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #475671;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.contact-form button {
+    background-color: #475671;
+    color: #F4EEDC;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* HOVER EFFECTS */
+.contact-form button:hover {
+    background-color: #2B3340;
+}
+
+a:hover, img:hover {
+    opacity: 0.8;
+}
+
+/* FOCUS STYLING */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 3px solid #C7CED6;
+}
+
+/* FLEXBOX FOR INTERESTS PAGE */
+
+.interests-container {
+    display: flex;
+    justify-content: space-around; /* even spacing */
+    align-items: center;           /* vertically centered */
+    gap: 20px;
+    padding: 20px;
+    background-color: #C7CED6;
+    height: 350px; /* required by assignment */
+}
+
+/* individual box styling */
+.box {
+    background-color: #F4EEDC;
+    color: #2B3340;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+/* alternating color requirement */
+.box:nth-child(odd) {
+    background-color: #C7CED6;
+}
+
+.box:nth-child(even) {
+    background-color: #F4EEDC;
+}
+
+/* MOBILE RESPONSIVE REQUIREMENT */
+@media (max-width: 700px) {
+    .interests-container {
+        flex-direction: column;   /* stacks vertically */
+        height: auto;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+/* ACTIVE NAVBAR LINK */
+.navbar .active {
+    color: #C7CED6;        /* lighter color */
+    text-decoration: underline; /* underline the active page */
+    font-weight: bold;     /* optional but looks good */
+}
